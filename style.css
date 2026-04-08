@@ -7,9 +7,11 @@
     padding: 0;
     margin: 0;
 }
+
 html{
     font-size: 62.5%;
 }
+
 body{
     font-family: 'poopins', sans-serif;
 }
@@ -32,6 +34,7 @@ body{
     text-transform: uppercase;
     font-weight: 500;
 }
+
 .btn-primary{
     color: #fff;
     background: #16a083;
@@ -45,14 +48,15 @@ body{
 }
 
 .navbar{
-box-shadow:0px 5px 10px 0px #aaa ;
-position: fixed;
-width: 100%;
-background-color: #fff;
-color: #000;
-opacity: 0.85;
-z-index: 999;
+    box-shadow:0px 5px 10px 0px #aaa ;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 999;
 }
+
 .navbar .container{
     display: flex;
     justify-content: space-between;
@@ -64,23 +68,28 @@ z-index: 999;
     display: flex;
     order: 2;
 }
+
 .navbar .logo{
- order: 1;
+    order: 1;
 }
+
 .navbar li{
     list-style: none;
     margin-left: 1.5rem;
     font-size: 1.8rem;
 }
+
 .navbar a{
     text-decoration: none;
     color: #444;
     transition: color 0.2s ease-in-out;
 }
+
 .navbar a:hover{
     color: #117964;
     border-bottom:1px solid #000;
 }
+
 /* ############# showcase styling ################ */
 
 .showcase-area{
@@ -90,6 +99,7 @@ z-index: 999;
     background-size: cover;
     background-position:center ;
 }
+
 .showcase-container{
     display: flex;
     justify-content: center;
@@ -98,24 +108,30 @@ z-index: 999;
     font-size: 1.6rem;
     flex-direction: column;
 }
+
 .main-title{
     text-transform: uppercase;
 }
+
 p{
     margin-top: 1rem;
 }
 
 /* ################## about us ############ */
+
 #about{
     padding:50px 0px;
     background: #f5f5f7;
 }
+
 .about-wrapper{
     display: flex;
 }
+
 #about h2{
     font-size: 3.2rem;
 }
+
 #about p{
     font-size: 1.6rem;
 }
@@ -125,71 +141,78 @@ p{
     color: #666;
     font-weight: 600;
 }
- .about-img{
-   flex: 1 1 400px;
-   padding: 30px;
-   transform: translateX(150%);
-   animation: about-img-animation 1s ease-in-out forwards;
- }
- @keyframes about-img-animation{
+
+.about-img{
+    flex: 1 1 400px;
+    padding: 30px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation{
     100%{
         transform:translate(0);
     }
- }
- .about-text{
+}
+
+.about-text{
     flex: 1 1 400px;
-    padding: 30px;  
+    padding: 30px;
     margin: auto;
     transform: translateX(-150%);
-   animation: about-text-animation 1s ease-in-out forwards;
- }
- @keyframes about-text-animation{
+    animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation{
     100%{
         transform:translate(0);
     }
- }
+}
 
- .about-img img{
+.about-img img{
     display: block;
     height: 400px;
     max-width: 100%;
     margin: auto;
     object-fit: cover;
     object-position: right;
- }
+}
 
+/* ##################food category styling################# */
 
- /* ##################food category styling################# */
- #food{
+#food{
     padding: 5rem 0 10rem 0;
- }
- #food h2{
+}
+
+#food h2{
     text-align: center;
     font-weight: 400;
     font-size: 3rem;
     margin-bottom: 40px;
     text-transform: uppercase;
     color: #555;
- }
+}
 
- .food-container{
+.food-container{
     display: flex;
     justify-content: space-between;
- }
- .food-container img{
+}
+
+.food-container img{
     display: block;
     width: 100%;
     margin: auto;
     max-height: 300px;
     object-fit: cover;
     object-position: center;
+}
 
- }
- .img-container{
+.img-container{
     margin: 0 1rem;
     position: relative;
- }
- .img-content{
+}
+
+.img-content{
     position: absolute;
     top: 70%;
     left: 50%;
@@ -198,16 +221,18 @@ p{
     z-index: 2;
     text-align: center;
     transition: all 0.3s ease-in-out;
- }
+}
 
- .img-content h3{
+.img-content h3{
     color: #fff;
     font-size: 3rem;
- }
- .img-content a{
+}
+
+.img-content a{
     font-size: 1.2rem;
- }
- .img-container::after{
+}
+
+.img-container::after{
     content: '';
     display: block;
     position: absolute;
@@ -218,37 +243,41 @@ p{
     background: rgba(0,0,0,0.871);
     opacity: 0;
     z-index: 1;
-
     transform: scaleY(0);
     transform-origin: 100% 100%;
     transition: all 0.3s ease-in-out ;
- }
+}
+
 .img-container:hover::after{
     opacity: 1;
-   transform: scaleY(1);
+    transform: scaleY(1);
 }
 
 .img-content:hover{
     opacity: 1;
     top: 50%;
 }
+
 /* ############food menu container ############# */
+
 #food-menu{
     padding: 5rem 0 10rem 0;
- }
- .food-menu-heading{
+}
+
+.food-menu-heading{
     text-align: center;
     font-weight: 400;
     font-size: 4rem;
     text-transform: uppercase;
     color: #666;
- }
+}
 
 .food-menu-container{
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0px 30px 0px;
 }
+
 .food-menu-container img{
     display: block;
     width: 250px;
@@ -264,27 +293,27 @@ p{
     justify-content: space-evenly;
     margin-bottom: 3rem;
 }
+
 .food-description{
     margin: auto 1.5rem;
-
 }
+
 .food-title{
     font-size: 2.2rem;
     font-weight: 400;
     color: #444;
-
 }
+
 .food-description p{
     font-size: 1.4rem;
     color: #555;
     font-weight: 500;
-
 }
+
 .food-description .food-price{
     color: #117964;
     font-weight: 700;
 }
-
 
 /* #################testimonial styling############# */
 
@@ -292,31 +321,36 @@ p{
     padding: 5rem 0;
     background: #e4e2e2;
 }
+
 .testimonial-title{
     text-align: center;
     font-weight: 400;
     font-size: 3rem;
     color: #555;
- }
+}
 
- .testimonial-container{
+.testimonial-container{
     display: flex;
     justify-content: space-between;
     font-size: 1.6rem;
     padding: 1rem;
- }
- .testimonial-container .checked{
+}
+
+.testimonial-container .checked{
     color: #ff9529;
- }
- .testimonial-box{
+}
+
+.testimonial-box{
     text-align: center;
     padding: 1rem;
- }
- .testimonial-box .testimonial-text{
+}
+
+.testimonial-box .testimonial-text{
     margin: 1rem 0;
     color: #444;
-  }
-  .customer-photo img{
+}
+
+.customer-photo img{
     display: block;
     border-radius: 50%;
     width: 100px;
@@ -324,44 +358,48 @@ p{
     object-fit: cover;
     object-position: center;
     margin: auto;
- }
+}
 
- /* ############### CONTACT ##################### */
- #contact{
+/* ############### CONTACT ##################### */
+
+#contact{
     padding: 5rem 0;
     background: rgb(226,226,226);
- }
- .contact-container{
+}
+
+.contact-container{
     display: flex;
     background: #fff;
+}
 
- }
-
- .contact-image{
+.contact-image{
     width: 50%;
- }
- .contact-image img{
+}
+
+.contact-image img{
     display: block;
     width: 100%;
     height: 400px;
     object-fit: cover;
     object-position: center;
- }
- .form-container{
+}
+
+.form-container{
     padding: 1rem;
     width: 50%;
     margin: auto;
- }
- .form-container h2{
+}
+
+.form-container h2{
     text-transform: uppercase;
     color: #444;
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 1rem;
+}
 
- }
- .form-container input,
- .form-container textarea{
+.form-container input,
+.form-container textarea{
     display: block;
     width: 100%;
     padding: 1rem 0;
@@ -371,115 +409,148 @@ p{
     border-bottom: 2px solid #ddd;
     outline: none;
     margin-bottom: 1rem;
-    font-weight: 500; 
- }
- .form-container a{
+    font-weight: 500;
+}
+
+.form-container a{
     font-size:1.2rem ;
- }
- /* #################footer styling################ */
- #footer h2{
+}
+
+/* #################footer styling################ */
+
+#footer h2{
     background: rgb(65,65,65);
     color: #fff;
     text-align: center;
     font-size: 2rem;
     padding: 3rem;
     font-weight: 500;
- }
+}
 
- /* ################# MEDIA    queary################### */
+/* ################# MEDIA queary################### */
 
- @media (max-width: 768px){
+@media (max-width: 768px){
+
     .navbar{
         opacity: 0.95;
     }
-    .navbar-container input[type='checkbox'],
-.navbar-container .humburger-lines{
-    display: block;
-}
 
+    /* FIX: correct container class */
     .navbar-container{
         display: block;
         position: relative;
         height: 64px;
     }
-    .navbar-container input[type='checkbox']
-    {
-        position: absolute;
+
+    .navbar input[type='checkbox'],
+    .navbar .humburger-lines{
         display: block;
+    }
+
+    .navbar input[type='checkbox']{
+        position: absolute;
         height: 32px;
         width: 40px;
-        top: 20px;
+        top: 15px;
         left: 20px;
         z-index: 5;
         opacity: 0;
+        cursor: pointer;
     }
-    .navbar-container .humburger-lines{
-        display: block;
-        height: 32px;
-        width: 40px;
+
+    .navbar .humburger-lines{
+        height: 25px;
+        width: 30px;
         position: absolute;
-        top: 20px;
+        top: 18px;
         left: 20px;
         z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    .navbar-container .humburger-lines .line{
-        display: block;
-        height: 4px;
-        width: 100%;
-        border-radius: 10px;
-        background: #333333;   
-    }
-    .navbar-container .humburger-lines .line1{
-        transform-origin: 0% 0%;
-        transition: transform 0.4s ease-in-out;
-    }
-    .navbar-container .humburger-lines .line2{ 
-        transition: transform 0.4s ease-in-out;
-    }   
-     .navbar-container .humburger-lines .line3{
-        transform-origin: 0% 100%;
-        transition: transform 0.4s ease-in-out;
-    }
-    .menu-items{
-        padding-top: 400px;
-        background:#fff;
-        height: 100vh;
-        max-width: 300px;
-        transform: translateX(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        padding-left: 50px;
-        transition: transform 0.5s ease-in-out;
-        box-shadow: 5px 0px 10px 0px #aaa;
 
+    .navbar .humburger-lines .line{
+        height: 3px;
+        width: 100%;
+        background: #333;
+        border-radius: 10px;
+        transition: 0.3s;
     }
+
+    /* FIX: push menu below navbar */
+    .menu-items{
+        position: fixed;
+        top: 64px;   /* 🔥 important fix */
+        left: 0;
+        width: 250px;
+        height: calc(100vh - 64px);
+        background: #fff;
+        padding-top: 40px;
+        transform: translateX(-100%);
+        flex-direction: column;
+        transition: 0.4s ease;
+        box-shadow: 5px 0 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
     .menu-items li{
-        margin-top: 1rem;
-        font-size: 2rem;
-        font-weight: 500;
+        margin: 20px 0;
+        font-size: 1.8rem;
     }
+
+    /* TOGGLE MENU */
+    .navbar input[type='checkbox']:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    /* HAMBURGER ANIMATION */
+    .navbar input[type='checkbox']:checked ~ .humburger-lines .line:nth-child(1){
+        transform: rotate(45deg) translate(5px,5px);
+    }
+
+    .navbar input[type='checkbox']:checked ~ .humburger-lines .line:nth-child(2){
+        opacity: 0;
+    }
+
+    .navbar input[type='checkbox']:checked ~ .humburger-lines .line:nth-child(3){
+        transform: rotate(-45deg) translate(5px,-5px);
+    }
+
+    /* LOGO FIX */
     .logo{
         position: absolute;
         top: 10px;
-        right: 15px;
-        font-size: 3rem;
-    }
-    .navbar-container input[type='checkbox']:checked ~ .menu-items{
-        transform: translateX(0);
-    }
-    .navbar-container input[type='checkbox']:checked ~ .humburger-lines .line1{
-        transform: rotate(45deg);
-    }
-    .navbar-container input[type='checkbox']:checked ~ .humburger-lines .line2{
-        transform: scaleY(0)
-    }
-    .navbar-container input[type='checkbox']:checked ~ .humburger-lines .line3{
-        transform: rotate(-45deg);
+        right: 20px;
+        font-size: 2.5rem;
     }
 
+    /* SECTION FIXES */
+    .food-container,
+    .about-wrapper,
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+    }
 
- }
+    /* IMAGE FIX */
+    .food-container img{
+        max-height: 200px;
+    }
+
+    .food-menu-item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .food-menu-container img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .contact-image,
+    .form-container{
+        width: 100%;
+    }
+}
